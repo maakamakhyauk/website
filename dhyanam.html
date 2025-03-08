@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamakhya Temple - Dhyanam</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body class="with-sidebar">
+    <button class="menu-toggle">
+        <i class="fas fa-bars"></i>
+    </button>
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <h3>ॐ</h3>
+        </div>
+        <nav class="sidebar-nav">
+            <a href="index.html" class="nav-item">
+                <i class="fas fa-home nav-icon"></i>
+                Home
+            </a>
+            <a href="stotras.html" class="nav-item">
+                <i class="fas fa-book-open nav-icon"></i>
+                Stotras
+            </a>
+            <a href="dhyanam.html" class="nav-item active">
+                <i class="fas fa-om nav-icon"></i>
+                Kamakhya Dhyanam
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fas fa-calendar nav-icon"></i>
+                Festival Calendar
+            </a>
+        </nav>
+    </div>
+    
+    <div class="main-content">
+        <div class="header">
+            <div class="om-symbol">ॐ</div>
+            <h1>॥ जय माँ कामाख्या ॥</h1>
+            <h1>Kamakhya Dhyanam</h1>
+        </div>
+
+        <div class="stotras-container">
+            <div class="stotra-section">
+                <h2>॥ कामाख्या ध्यानम् ॥</h2>
+                <div class="stotra-text">
+                    <div class="sanskrit">
+                        रविशशियुतकर्णा कुंकुमापीतवर्णा <br class="verse-line">
+                        मणिकनकविचित्रा लोलजिह्वा त्रिनेत्रा । <br class="verse-line">
+                        अभयवरदहस्ता साक्षसूत्रप्रहस्ता <br class="verse-line">
+                        प्रणतसुरनरेशा सिद्धकामेश्वरी सा ॥ १॥ <br class="verse-end">
+                        
+                        अरुणकमलसंस्था रक्तपद्मासनस्था <br class="verse-line">
+                        नवतरुणशरीरा मुक्तकेशी सुहारा । <br class="verse-line">
+                        शवहृदि पृथुतुङ्गा स्वाङ्घ्रियुग्मा मनोज्ञा <br class="verse-line">
+                        शिशुरविसमवस्त्रा सर्वकामेश्वरी सा ॥ २॥ <br class="verse-end">
+                        
+                        विपुलविभवदात्री स्मेरवक्त्रा सुकेशी <br class="verse-line">
+                        दलितकरकदन्ता सामिचन्द्रावतंसा । <br class="verse-line">
+                        मनसिज-दृशदिस्था योनिमुद्रालसन्ती <br class="verse-line">
+                        पवनगगनसक्ता संश्रुतस्थानभागा । <br class="verse-line">
+                        चिन्ता चैवं दीप्यदग्निप्रकाशा <br class="verse-line">
+                        धर्मार्थाद्यैः साधकैर्वाञ्छितार्था ॥ ३॥ <br class="verse-end">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.sidebar').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

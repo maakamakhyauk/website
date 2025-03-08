@@ -1,0 +1,48 @@
+<button class="menu-toggle">
+    <i class="fas fa-bars"></i>
+</button>
+<div class="sidebar">
+    <div class="sidebar-header">
+        <h3>Kamakhya Temple</h3>
+    </div>
+    <nav class="sidebar-nav">
+        <a href="index.html" class="nav-item" id="nav-home">
+            <i class="fas fa-home nav-icon"></i>
+            Home
+        </a>
+        <a href="stotras.html" class="nav-item" id="nav-stotras">
+            <i class="fas fa-book-open nav-icon"></i>
+            Stotras
+        </a>
+        <a href="dhyanam.html" class="nav-item" id="nav-dhyanam">
+            <i class="fas fa-om nav-icon"></i>
+            Dhyanam
+        </a>
+        <a href="#" class="nav-item" id="nav-calendar">
+            <i class="fas fa-calendar nav-icon"></i>
+            Festival Calendar
+        </a>
+    </nav>
+</div>
+
+<script>
+    // Set active nav item based on current page
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    const navItems = {
+        'index.html': 'nav-home',
+        'stotras.html': 'nav-stotras',
+        'dhyanam.html': 'nav-dhyanam'
+    };
+    
+    if (navItems[currentPage]) {
+        document.getElementById(navItems[currentPage]).classList.add('active');
+    }
+
+    // Mobile menu toggle
+    document.querySelector('.menu-toggle').addEventListener('click', function() {
+        const container = this.closest('#sidebar-container');
+        if (container) {
+            container.classList.toggle('active');
+        }
+    });
+</script>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv='cache-control' content='no-cache'> 
+    <meta http-equiv='expires' content='0'> 
+    <meta http-equiv='pragma' content='no-cache'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jai Maa Kamakhya</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body class="with-sidebar">
+    <button class="menu-toggle">
+        <i class="fas fa-bars"></i>
+    </button>
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <h3>ॐ</h3>
+        </div>
+        <nav class="sidebar-nav">
+            <a href="index.html" class="nav-item active">
+                <i class="fas fa-home nav-icon"></i>
+                Home
+            </a>
+            <a href="stotras.html" class="nav-item">
+                <i class="fas fa-book nav-icon"></i>
+                Kamakhya Stotram
+            </a>
+            <a href="dhyanam.html" class="nav-item">
+                <i class="fas fa-om nav-icon"></i>
+                Kamakhya Dhyanam
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fas fa-calendar nav-icon"></i>
+                Festival Calendar
+            </a>
+        </nav>
+    </div>
+    
+    <div class="main-content">
+        <div class="decorative-corner top-left"></div>
+        <div class="decorative-corner top-right"></div>
+        <div class="header">
+            <div class="om-symbol">ॐ</div>
+            <h1>॥ जय माँ कामाख्या ॥</h1>
+            <h1>Jai Maa Kamakhya</h1>
+            <div class="decorative-line"></div>
+        </div>
+        <div class="temple-image-container">
+            <div class="temple-image">
+                <img src="images/temple1.jpeg" alt="Kamakhya Temple" class="main-temple-image">
+                <div class="image-overlay">
+                    <div class="decorative-accent left"></div>
+                    <h2>The Sacred Kamakhya Temple</h2>
+                    <p>One of the oldest of the 51 Shakti Peethas</p>
+                    <div class="decorative-accent right"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="welcome-section">
+            <div class="welcome-content">
+                <div class="kalash-container">
+                    <div class="kalash-symbol">🕉</div>
+                    <div class="decorative-line"></div>
+                </div>
+                <h2>Welcome to the Divine Presence</h2>
+                <p>Experience the spiritual energy of Maa Kamakhya, where ancient traditions meet divine grace.</p>
+            </div>
+        </div>
+
+        <div class="aspects-section">
+            <h2 class="aspects-title">Sacred Aspects of the Temple</h2>
+            <div class="aspects-grid">
+                <div class="aspect-card" data-modal="history">
+                    <div class="aspect-image">
+                        <img src="images/history-placeholder.jpg" alt="Temple History">
+                    </div>
+                    <h3>Ancient History</h3>
+                    <p>Discover the temple's rich heritage</p>
+                </div>
+                <div class="aspect-card" data-modal="architecture">
+                    <div class="aspect-image">
+                        <img src="images/architecture-placeholder.jpg" alt="Temple Architecture">
+                    </div>
+                    <h3>Divine Architecture</h3>
+                    <p>Marvel at the sacred design</p>
+                </div>
+                <div class="aspect-card" data-modal="rituals">
+                    <div class="aspect-image">
+                        <img src="images/rituals-placeholder.jpg" alt="Temple Rituals">
+                    </div>
+                    <h3>Sacred Rituals</h3>
+                    <p>Experience divine traditions</p>
+                </div>
+                <div class="aspect-card" data-modal="festivals">
+                    <div class="aspect-image">
+                        <img src="images/festivals-placeholder.jpg" alt="Temple Festivals">
+                    </div>
+                    <h3>Festivals & Celebrations</h3>
+                    <p>Join in spiritual festivities</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Container -->
+        <div class="modal-overlay" id="modalOverlay">
+            <div class="modal-content">
+                <span class="modal-close">&times;</span>
+                <div class="modal-body">
+                    <!-- Content will be dynamically inserted here -->
+                </div>
+            </div>
+        </div>
+
+        <div class="decorative-corner bottom-left"></div>
+        <div class="decorative-corner bottom-right"></div>
+
+        <!-- Modal Content (Hidden) -->
+        <div id="modalContent" style="display: none;">
+            <div data-modal-id="history">
+                <h2>The Ancient History of Kamakhya Temple</h2>
+                <p>The Kamakhya Temple, nestled in the mystical hills of Guwahati, is one of the oldest and most revered Shakti Peethas. Legend speaks of its origin dating back to the time when Lord Shiva carried the body of Goddess Sati, and her Yoni fell at this sacred spot. The temple has witnessed countless centuries of devotion, rebuilding, and spiritual enlightenment.</p>
+                <p>Through the ages, various dynasties have contributed to its grandeur, with the current structure being rebuilt in the 17th century by King Nara Narayana of Cooch Behar. The temple stands as a testament to unwavering faith and divine presence.</p>
+            </div>
+            <div data-modal-id="architecture">
+                <h2>Divine Architecture of the Temple</h2>
+                <p>The Kamakhya Temple exhibits a remarkable blend of architectural styles, featuring elements from both North and Northeast Indian temple architecture. The main temple, with its distinctive hemispherical dome, houses several smaller temples within its complex.</p>
+                <p>The intricate carvings on the walls depict various forms of the Goddess, celestial beings, and geometric patterns. The temple's design follows sacred geometry principles, creating a powerful spiritual atmosphere that enhances the devotee's connection with the divine.</p>
+            </div>
+            <div data-modal-id="rituals">
+                <h2>Sacred Rituals and Practices</h2>
+                <p>Daily rituals at the Kamakhya Temple follow ancient Tantric traditions, with elaborate ceremonies performed from dawn to dusk. The morning begins with the awakening of the Goddess through sacred chants and offerings, followed by various puja ceremonies throughout the day.</p>
+                <p>Special emphasis is placed on the offering of red hibiscus flowers, considered particularly dear to the Goddess. The temple is unique in its celebration of the divine feminine energy through various tantric practices and rituals.</p>
+            </div>
+            <div data-modal-id="festivals">
+                <h2>Festivals and Celebrations</h2>
+                <p>The Ambubachi Mela is the temple's most significant festival, celebrating the annual menstruation of Mother Earth. During this time, thousands of devotees and tantric practitioners gather to honor the Goddess.</p>
+                <p>Other major celebrations include Durga Puja, Pohan Biya (the marriage ceremony of the Goddess), and various other festivals that mark important dates in the Hindu calendar. Each celebration brings its own unique rituals and spiritual significance.</p>
+            </div>
+        </div>
+
+        <script>
+            // Modal functionality
+            const modalOverlay = document.getElementById('modalOverlay');
+            const modalContent = document.getElementById('modalContent');
+            const aspectCards = document.querySelectorAll('.aspect-card');
+            const modalClose = document.querySelector('.modal-close');
+
+            aspectCards.forEach(card => {
+                card.addEventListener('click', () => {
+                    const modalId = card.getAttribute('data-modal');
+                    const content = modalContent.querySelector(`[data-modal-id="${modalId}"]`).innerHTML;
+                    document.querySelector('.modal-body').innerHTML = content;
+                    modalOverlay.classList.add('active');
+                    document.body.style.overflow = 'hidden';
+                });
+            });
+
+            modalClose.addEventListener('click', () => {
+                modalOverlay.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            });
+
+            modalOverlay.addEventListener('click', (e) => {
+                if (e.target === modalOverlay) {
+                    modalOverlay.classList.remove('active');
+                    document.body.style.overflow = 'auto';
+                }
+            });
+        </script>
+    </div>
+
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.sidebar').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
