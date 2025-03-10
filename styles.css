@@ -940,3 +940,22 @@ h1:lang(sa), h2:lang(sa), h3:lang(sa), .sanskrit-text {
         font-size: 2rem;
     }
 }
+
+.footer {
+    background: rgba(139, 0, 0, 0.9);
+    color: #FFD700;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 3rem;
+    font-family: 'Cinzel', serif;
+}
+
+.footer a {
+    color: #FFD700;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.footer a:hover {
+    opacity: 0.8;
+}
